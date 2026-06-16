@@ -1,0 +1,1 @@
+update jobs SET archived=1 WHERE `STATUS`=-2 AND date(rec_modified)<= DATE_ADD(CURDATE(),INTERVAL -2 WEEK);

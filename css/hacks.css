@@ -1,0 +1,208 @@
+/*HTML5 placeholder tweak*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #999 !important;
+}
+input::-moz-placeholder, textarea::-moz-placeholder,
+input:-moz-placeholder, textarea:-moz-placeholder {
+color: #999 !important;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{
+color: #999 !important;
+}
+/*end HTML5 placeholder tweak*/
+
+:focus{/*remove webkit focused outline*/
+    outline:none;/*removed for better focus in file system*/
+}
+select[disabled] > option[selected] {
+    color: #FFF;
+}
+
+/*dat.GUI hacks*/
+
+.dg select{
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: 1px solid;
+    color: black;
+}
+
+/*bootstrap overwrite */
+#main p {
+    margin-bottom: auto;
+}
+
+#main label {
+    margin-bottom: auto;
+}
+
+.qtip-content p{
+    margin-bottom: auto;
+}
+
+.cd_kanban_board{
+    overflow-x: unset;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block .cd_kanban_board_block_item {
+    width: auto;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block {
+    min-height: 730px;
+    height: auto;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block .cd_kanban_board_block_item .cd_kanban_board_block_item_title {
+    font-size: 13px!important;
+    padding: .75rem;
+    margin: -.75rem -.75rem -.75rem;
+    position: relative;
+    z-index: 21;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block, .cd_kanban_board>.cd_kanban_board_titles .cd_kanban_board_title {
+    min-width: 150px;
+    padding: 8px 16px 8px 16px;
+}
+
+.cd_kanban_board>.cd_kanban_board_titles {
+    position: sticky;
+    z-index: 1;
+    top:0px;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks{
+    /*padding-top: 48px;*/
+}
+
+.pull-left{
+    background-color: #baf0ff;
+}
+
+.jtable-command-order{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block .cd_kanban_board_block_item .cd_kanban_board_block_item_img{
+    padding: 1px;
+    margin: 0.75rem -0.75rem -0.75rem;
+}
+
+.cd_kanban_board>.cd_kanban_board_blocks .cd_kanban_board_block .cd_kanban_board_block_item{
+    cursor: pointer;
+}
+
+#observation_container .jumbotron {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+#observation_container{
+    display: inline-block;
+    width: 100%;
+    height: 380px;
+    overflow-y: auto;
+}
+
+#observation_container span.job_obs_date{
+    color: #3B81CD;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#observation_container span.job_obs_title{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#observation_container .job_obs_content{
+    margin-top: 5px;
+}
+
+#board-container{
+	display:inline-block
+}
+
+#board-filter{
+	margin-top: 5px;
+    width: 950px;
+    position: sticky;
+    left: 0;
+}
+
+.plan_sort div.jtable-main-container table.jtable tbody > tr > td{
+    font-size: 14px;
+}
+
+.plan_sort div.jtable-main-container table.jtable thead > tr > th{
+    font-size: 13px;
+}
+
+.cd_kanban_board > .cd_kanban_board_titles .cd_kanban_board_title p{
+    /*display: inline-block;*/
+}
+
+.cd_kanban_board > .cd_kanban_board_titles .cd_kanban_board_title span.element_number{
+    position: absolute;
+    right: 7px;
+}
+
+.cd_kanban_board > .cd_kanban_board_titles .cd_kanban_board_title span.est_time_block{
+    position: relative;
+}
+
+.series_div{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.pagination td {
+    vertical-align: middle;
+}
+
+.dent-input textarea{	/* width: 97%; width: calc(100% - 10px); */width: 100%; resize: none;  height: 75px; }
+.dent-input textarea.jtable-textarea-larger{ height: 135px; }
+.dent-input textarea.height-150{ height: 150px; }
+.dent-input textarea.height-28{ height: 24px; resize: none; height: 28px}
+.dent-input textarea.resize-y-300{ resize: vertical; max-height: 300px; }
+.dent-input textarea.height-y-45{ resize: vertical; height: 45px; }
+.dent-input textarea.height-y-70{ resize: vertical; height: 70px; }
+
+#main-toolbar .dropdown-item{
+    width: auto;
+}
+
+.tool_out_table div.jtable-main-container table.jtable tbody > tr {
+    background: #F0FFFF;
+}
+
+.tool_out_table div.jtable-main-container table.jtable tbody > tr.jtable-row-even {
+    background: none repeat scroll 0 0 #FFFFEB;
+}
+
+.tool_in_table div.jtable-main-container table.jtable tbody > tr {
+    background: #FAF0F0;
+}
+
+.tool_in_table div.jtable-main-container table.jtable tbody > tr.jtable-row-even {
+    background: none repeat scroll 0 0 #F0FFF2;
+}
+
+#tool_settings-container div.jtable-main-container table.jtable thead > tr > th, #production_container div.jtable-main-container table.jtable thead > tr > th, #tool_stock div.jtable-main-container table.jtable thead > tr > th {
+    font-size: 13px;
+}
+
+#tool_settings-container div.jtable-main-container table.jtable tbody > tr > td, #production_container div.jtable-main-container table.jtable tbody > tr > td, #tool_stock-container div.jtable-main-container table.jtable tbody > tr > td {
+    font-size: 13px;
+}
+
+#production_container div.jtable-main-container table.jtable tbody > tr > td.param_list, #tool_stock div.jtable-main-container table.jtable tbody > tr > td.param_list {
+    font-size: 11px;
+}

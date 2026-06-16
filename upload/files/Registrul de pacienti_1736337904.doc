@@ -1,0 +1,88 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Registrul de pacienti</title></head><body><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><link href="http://localhost/dent/source/css/reset__1556107924.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/printing/html_iframe_print__1708268956.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/printing/html_template_print__1708452234.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/js.gpdf/gpdf.fonts__1642200392.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/font-awesome/css/all.min__1706609108.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/font-awesome/css/fa.dent__1551260090.css" rel="stylesheet" type="text/css"><link href="http://localhost/dent/source/css/font-awesome/css/solid.dent__1706618169.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="http://localhost/dent/source/js/jquery/jquery-2.2.4.min__1467010536.js"></script>
+        <script type="text/javascript" src="http://localhost/dent/source/js/droot.tristate/jquery.tristate__1607272177.js"></script><style type="text/css">.prn-page{margin-bottom:-48px} .prn-footer, .prn-push {min-height:48px}</style></head><body><div class="html-printer"><div class="html-printer-page"><div class="prn-page" style="margin-bottom: -48px;"><div class="prn-header" style="border: 1px solid white;">    <div class="header_information text-center clearfix hide_selectable" hide_selectable_text="Antet">
+        <img style="width: 100%; max-height: 200px; margin-bottom: 3px;" class="hidden workstation_header_selectable" alt="" src="data:," crossorigin="anonymous">
+    </div>
+</div><div class="header_title">
+    <h1 class="header_selectable">Registrul de pacienți</h1>
+</div>
+<div style="height: 10px; width: 100%"></div>
+<table class="print_table" style="width:100%">
+    <tbody><tr class="tr_header">
+        <td width="75%" align="left" class="hide_selectable" hide_selectable_text="Filtru"></td>
+        <td width="25%" align="right" style="vertical-align:bottom;text-align: right; font-weight: bold">Pacienți înregistrați: 3</td>
+    </tr>
+</tbody></table>
+<div class="clear"></div>
+
+    <table class="print_table print_exportable print_selectable">
+        <tbody><tr class="tr_header">
+            <th style="min-width:25%">Nume</th>
+            <th class="print_selectable_col">Cod pacient</th>
+            <th class="print_selectable_col">CNP</th>
+            <th style="min-width:70px" class="print_selectable_col">Data nașterii</th>
+            <th class="print_selectable_col"> Email</th>
+            <th class="print_selectable_col">Mobil</th>
+            <th class="print_selectable_col">Telefon</th>
+            <th style="min-width:70px" class="print_selectable_col">Ultima vizită</th>
+            <th style="min-width:70px" class="print_selectable_col"></th>
+            <th style="min-width:70px" class="print_selectable_col">Următoarea programare</th>
+        </tr>
+            <tr class="">
+            <td>Aaa Aaa</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>ladolori@gmail.com</td>
+            <td>0743865465</td>
+            <td></td>
+            <td>2024-02-23</td>
+            <td></td>
+            <td align="center" class="">2024-03-15 14:00</td>
+        </tr>
+                <tr class="tr_alt">
+            <td>Bbb Bbb</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>ldlorand@yahoo.com</td>
+            <td>0743865464</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center" class=""></td>
+        </tr>
+                <tr class="">
+            <td>Ccc Ccc</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center" class=""></td>
+        </tr>
+            </tbody></table>
+    <div class="prn-push"></div><div class="prn-no-print distance"></div></div><div class="prn-footer"><table width="100%" border="0" cellspacing="0" cellpadding="5" class="hide_selectable" hide_selectable_text="Subsol">
+    <tbody><tr>
+        <td width="40%" align="left" valign="middle">
+            <p class="fsize-10">The Test Institute</p>
+            <p class="fsize-10">0785545555, 0265222545, user@droot.ro, droot.ro</p>
+        </td>
+        <td width="20%" align="center" valign="middle">
+            <img class="hidden workstation_logo_selectable" style="height: 44px;padding: 0 0px;" alt="" src="data:," crossorigin="anonymous">
+        </td>
+        <td width="40%" align="right" valign="middle">
+            <p class="fsize-10">2024-03-14</p>
+            <p class="fsize-10"></p>
+            <!--<p class="fsize-10">www.droot.ro</p>-->
+        </td>
+    </tr>
+</tbody></table>
+</div></div></div>
+        <script>
+            setTimeout(function(){
+                $(".prn-page").css("margin-bottom", "-"+($(".prn-footer").height()));
+            }, 1500);
+        </script></body></body></html>

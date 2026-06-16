@@ -1,0 +1,11 @@
+CREATE TABLE `project_files` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`project_id` INT(11) NULL DEFAULT NULL,
+	`name` VARCHAR(250) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`ts` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `name_idx` (`name`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

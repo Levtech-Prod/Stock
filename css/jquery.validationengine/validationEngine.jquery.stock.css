@@ -1,0 +1,90 @@
+/*jQuery ValidateEngine tweaks*/
+
+.formError .formErrorContent {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f8f8 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f8f8 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f8f8 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: linear-gradient(to bottom,  #f8f8f8 0%,#ffffff 100%); /* W3C */
+	width: auto;
+	font-family: Verdana,Arial,sans-serif;
+	box-shadow: none;/*0px 0px 0px #A0A0A0;*/
+	border:1px solid #bbb;
+	border-radius: 3px;
+	padding-left: 36px;
+	text-align: left;
+	color:#e5353b;
+}
+
+.formError .formErrorArrow{
+	margin-left:36px;
+}
+
+.formError .formErrorArrow div {
+	box-shadow: 0 0px 0px #bbb;
+	background-color: #ffffff;
+}
+
+.formError .formErrorArrowBottom div{
+	box-shadow: none;
+	background-color: #fafafa;
+}
+.formError .formErrorDesign.arrowTop{
+	bottom: 9px;
+}
+.formError .formErrorDesign.arrowBottom{ /*for the bottom arrow*/
+    top: 11px;
+    bottom: 1px;
+}
+
+/*end jQuery ValidateEngine tweaks*/
+
+/*jQuery ValidateEngine right color div tweak*/
+
+.formError .formErrorDesign .formErrorIcon{
+  	background-image: url("../../images/ui-icons_white.png");
+	background-position: -128px -128px;
+    /*display: block;*/
+    height: 16px;
+    width: 16px;	
+    margin-left: 6px;
+/*    margin-right: auto;*/
+    margin-top: -8px;
+   	padding: 0;
+   	position: absolute;
+   	top: 50%;
+    z-index: 5010;
+}
+
+
+.formError .formErrorDesign{ /*the red popup*/
+	background-color: #E5353B;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    width: 29px;
+    z-index: 5002;	
+    text-align: center;
+    vertical-align: middle;
+	border-bottom-left-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.formError.greenPopup .formErrorContent{
+	color: #027929;
+}
+.formError.greenPopup .formErrorDesign{
+	background: #027929;
+}
+
+.formError.blackPopup .formErrorContent{
+	color: #394046;
+}
+.formError.blackPopup .formErrorDesign{
+	background: #394046;	
+}
+
+
+/*end jQuery ValidateEngine right color div tweak*/

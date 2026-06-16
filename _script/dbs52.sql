@@ -1,0 +1,1 @@
+update quoting_parts p set unique_wage=(SELECT wage FROM quoting WHERE id=p.quoting_id);

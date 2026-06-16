@@ -1,0 +1,165 @@
+.dselector{
+    background-color:#F1F1F1;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.dselector .dheader{
+    position:relative;
+    background-color:#DDDDDD;
+    color: #343a40;
+    padding:0 100px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: default;
+    box-sizing: border-box;
+}
+.dselector .dheader .dhtitle{
+    font-size: 1.1em;
+    margin: 5px 10px 0px 30px;
+    display: inline-block;
+}
+.dselector .dheader .dhboxtxt{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin: 1px 5px;
+    cursor: pointer;
+    background-color:#F1F1F1;
+    display: inline-block;
+}
+
+.dselector .dheader .dhname{
+    margin-right: 5px;
+    font-size: 12px;
+}
+.dselector .dheader .dhval{
+    color: #444;
+}
+.dselector .dheader .dhicon{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top:-13px;
+    color: #343a40;
+}
+
+.dselector .dheader .dhicon:hover{
+    color:#f45506;
+}
+
+.dselector .dheader .dhicon-toggle{
+    right:0px;
+}
+
+.dselector .dheader .dhicon-clear{
+    right:25px;
+}
+
+.dselector .dheader .dhicon-check{
+    right:50px;
+}
+
+.dselector .dheader .dhicon-refresh{
+    right:75px;
+}
+
+.dselector .dcontainer{
+    display: inline-block;
+    padding:7px 2px 0px 5px;
+    margin-bottom:-2px;
+}
+
+.dselector .dbox{
+    min-width: 223px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    background-color: #ffffff;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    border-left: 3px solid #343a40;
+    display: inline-block;
+}
+.dselector .dbox .dlabel{
+    color: #343a40;
+    font-style: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: 0px;
+    width:130px;
+    margin-bottom: 0px;
+}
+.dselector .dbox .dinput{
+    box-sizing:border-box;
+}
+.dselector .dbox .dinput:not(.select2-container){
+    padding: 3px 3px 5px 7px;
+}
+.dselector .dbox .dinput_double:nth-of-type(1){
+    margin-right:5px;
+}
+.dselector .dbox .ddiv{
+    position:relative;
+    display: inline-block;
+    width:100%;
+}
+.dselector .dbox .ddiv .dicon{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top:-8px;
+    color: #343a40;
+}
+.dselector .dbox .ddiv .dicon:hover{
+    color: #f45506;
+}
+
+.dselector .dbox .ddiv .dicon-0{
+    margin-right:0px;
+}
+.dselector .dbox .ddiv .dicon-1{
+    margin-right:15px;
+}
+.dselector .dbox .ddiv .dicon-2{
+    margin-right:30px;
+}
+
+.dselector .dbox .ddiv .dicon-pos-0{
+    right: 0%;
+}
+.dselector .dbox .ddiv .dicon-pos-1{
+    right: 50%;
+}
+
+.dselector .color-box {
+    width:30px;
+    height:17px;
+    margin:5px;
+    border: 1px solid gray;
+    vertical-align: -7px;
+    display: inline-block;
+    cursor: default;
+}
+
+.dselector .dheader .color-box {
+    width:10px;
+    height:10px;
+    margin:0;
+    border: 1px solid gray;
+    vertical-align: -2px;
+    display: inline-block;
+}
+
+.ui-sortable-handle{
+    cursor: move;
+}
+.dselector .dheader .dhicon.dhicon-info{
+    top: 2px;
+    margin-top: 0px;
+}

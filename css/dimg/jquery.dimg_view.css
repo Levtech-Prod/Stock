@@ -1,0 +1,29 @@
+.di-v.dimg-view{
+    cursor: pointer;
+    border-left: 3px solid #98CF09;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    background-color:#F1F1F1;
+    overflow: hidden;
+    position:relative;
+}
+.di-v.dimg-view-noimg{
+    font-size: 1em;
+    position: absolute;
+    margin: auto;
+    bottom:0px;
+    left:0px;
+    top:0px;
+    right:0px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+}
+.di-v.dimg-view-element-thumbnail{
+    position: absolute;
+    margin: auto;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+}

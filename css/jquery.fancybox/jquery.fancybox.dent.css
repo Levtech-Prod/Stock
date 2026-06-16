@@ -1,0 +1,78 @@
+.fancybox-skin {
+	border-radius: 3px;
+}
+.fancybox-title-float-wrap{
+	width: 100%;
+}
+.fancybox-title-float-wrap .child{
+	display: inline-block;
+	margin-right: -100%;
+	padding: 5px 30px;
+	background: transparent;
+	background: #F1F1F1;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 3px;
+	margin-top: 4px;
+}
+
+.fancybox-inner{
+	border:1px solid #ccc;
+	border-radius: 3px;
+}
+
+.fancybox-options{
+    margin-left: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 250px;
+    background : #f9fdf9;
+    overflow-y: auto;
+}
+
+.fancybox-options input[type="text"]{
+    width: 100%;
+}
+
+.fancybox-options-title{
+    color: #3B81CD;
+    font-size: 13px;
+    margin: 15px 0px 5px 10px;
+}
+
+.select_option, .hide_option, .hide_option_class, .change_option, .select2_option, .pdf_option{
+    margin-left: 10px;
+}
+
+.select2_option{
+    width: 95%;
+}
+
+.select_option label, .hide_option label, .hide_option_class label{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+.fancybox-watermark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 90px;
+    background-size: 100px 70px!important;
+    background-position: 10px 10px!important;
+    z-index: 1100;
+    color: white;
+    font-size: 20px;
+    line-height: 6;
+}
+
+.fancybox-watermark[alt] {
+    margin-left: -16px;
+}
