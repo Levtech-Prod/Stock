@@ -1,0 +1,89 @@
+#SET CHAR SET TO UTF-8 PageSpeed - http://www.askapache.com/htaccess/setting-charset-in-htaccess.html
+AddDefaultCharset UTF-8
+
+#DISABLE DIRECTORY BROWSING
+Options All -Indexes
+
+#PREVENT ACCESS TO HIDDEN FILES - https://stackoverflow.com/questions/4352737/apache-configuration-regex-to-disable-access-to-files-directories-beginning-wit
+<FilesMatch "^\.">
+	Order allow,deny
+    Deny from all
+</FilesMatch>
+
+#STRIP FileETag - http://www.websiteoptimization.com/secrets/advanced/configure-etags.html
+FileETag None
+Header unset ETag
+
+#ADD CORRECT MIME TYPE FOR WEB FONTS
+AddType font/ttf .ttf
+AddType application/font-woff .woff
+AddType application/font-woff2 .woff2
+AddType application/vnd.ms-fontobject .eot
+
+#ENABLE COMPRESSION
+<ifModule mod_deflate.c>
+	<ifModule mod_filter.c>
+		AddOutputFilterByType DEFLATE text/html text/plain text/xml
+	</ifModule>
+	<FilesMatch "\.(js|css|php)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</ifModule>
+
+#CACHE CONTROL FOR HTML - 5 MINUTES 60*5=300
+<filesMatch "\.(html|htm)$">
+	Header set Cache-Control "max-age=300"
+	#Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+	#Header set Pragma "no-cache"
+	#Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</filesMatch>
+
+#CACHE CONTROL FOR JS AND CSS - 7DAYS 60*24*7=604800
+<FilesMatch "\.(js|css)$">
+	Header set "Cache-Control" "max-age=604800"
+</FilesMatch>
+
+#CACHE CONTROL FOR IMAGES - 7DAYS 60*24*7=604800
+<FilesMatch "\.(gif|jpe?g|png|ico)$">
+	Header set "Cache-Control" "max-age=604800"
+</FilesMatch>
+
+# SET THE CORS HEADES AND HSTS
+<ifModule mod_headers.c>
+	Header add Strict-Transport-Security: "max-age=15768000;includeSubdomains"
+
+	#SET THIS FOR THE CORS TO WORK - COMMENT IN PRODUCTION SECURITY ISSUE
+	#Header set Access-Control-Allow-Origin "*"
+	#Header add Access-Control-Allow-Origin "*"
+
+	#SET THIS FOR THE CORS TO WORK ON WEB FONTS 
+	<FilesMatch "\.(svg|ttf|otf|eot|woff|woff2)$">
+		Header set Access-Control-Allow-Origin "*"
+	</FilesMatch>
+</ifModule>
+
+#START MOD_REWRITE
+RewriteEngine On
+
+#PREVENT ACCES TO _lock FILE
+RewriteRule ^_lock(.*)$ - [F,L]
+
+#FORCE HTTP AUTHORIZATION FOR CGI - http://stackoverflow.com/questions/3663520/php-auth-user-not-set
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteRule ^profiles/(.*)\.(gif|jpe?g|png)$ ./images/image_not_available.png [L]
+
+#JS AND CSS VERSIONING (filename__XXXXX.js)
+RewriteRule ^js/(.*)\_\_[0-9]+\.js   js/$1.js [L]
+RewriteRule ^stock_js/(.*)\_\_[0-9]+\.js   stock_js/$1.js [L]
+RewriteRule ^js/(.*)\_\_[0-9]+\.xml   js/$1.xml [L]
+RewriteRule ^js/(.*)\_\_[0-9]+\.dae   js/$1.dae [L]
+RewriteRule ^css/(.*)\_\_[0-9]+\.css   css/$1.css [L]
+RewriteRule ^images/(.*)\_\_[0-9]+\.(.*)  images/$1.$2 [L]
+RewriteRule ^profiles/(.*)\_\_[0-9]+\.(.*)  profiles/$1.$2 [L]
+RewriteRule ^favicon\_\_[0-9]+\.(.*)   favicon.$1 [L]
+RewriteRule ^static/(.*)\_\_[0-9]+\.pdf   static/$1.pdf [L]
+
+<IfModule mod_env.c>
+    SetEnv CI_ENV production
+</IfModule>

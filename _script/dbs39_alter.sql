@@ -1,0 +1,4 @@
+ALTER TABLE `jobs`
+	ADD COLUMN `weight` DOUBLE(11,2) NULL DEFAULT '0.00' AFTER `handling`,
+	ADD COLUMN `post_price` DOUBLE(11,2) NULL DEFAULT '0.00' AFTER `weight`,
+	ADD COLUMN `surface` DOUBLE(11,2) NULL DEFAULT '0.00' AFTER `post_price`;

@@ -1,0 +1,53 @@
+.select2_borderless{
+	min-width: 100px;
+	max-width: 400px;
+}
+.select2_borderless.select2-container .select2-choice {
+	border-radius: 0px;
+	background-image: none;
+	border: none;
+	border: 1px solid transparent;
+	color:#005CC0;
+	box-shadow: none;
+}
+.select2_borderless.select2-container .select2-choice:hover,
+.select2_borderless.select2-container.select2-dropdown-open .select2-choice {
+	border: 1px solid #d6d6d6;
+	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.select2_borderless.select2-container .select2-choice.select2-default {
+	color: #999;
+}
+
+.select2_borderless.select2-container .select2-choice .select2-arrow {
+	background: none;
+	border: none;
+}
+.select2_borderless.select2-container .select2-choice:hover .select2-arrow,
+.select2_borderless.select2-container.select2-dropdown-open .select2-choice .select2-arrow
+{
+	background: #ccc;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
+	background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+	background-image: linear-gradient(top, #cccccc 0%, #eeeeee 60%);
+	border-left: 1px solid #d6d6d6;
+	border-radius: 0px;
+}
+.select2_borderless.select2-container .select2-choice .select2-arrow b{
+    background-position: -9000px -9000px;
+}
+
+.select2_borderless.select2-container .select2-choice:hover .select2-arrow b, 
+.select2_borderless.select2-container.select2-dropdown-open .select2-choice .select2-arrow b{
+    background-position: 0px 1px;
+}
+
+.select2_borderless.select2-container .select2-choice:hover .select2-search-choice-close, 
+.select2_borderless.select2-container.select2-dropdown-open .select2-choice .select2-search-choice-close{
+    display: inline-block;
+}
+.select2_borderless.select2-container .select2-choice .select2-search-choice-close,
+.select2_borderless.select2-container .select2-choice.select2-default:hover .select2-search-choice-close,
+.select2_borderless.select2-container.select2-dropdown-open .select2-default .select2-search-choice-close{
+    display: none;
+}

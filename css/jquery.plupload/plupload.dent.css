@@ -1,0 +1,48 @@
+/*plupload - remove side padding*/
+.plupload_container{
+	padding: 0px 0px;
+	margin:5px 0px;
+}
+
+.plupload{
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.plupload_button{
+	border-radius:2px;
+}
+
+.plupload_filelist_footer{
+	border-top:none;
+}
+
+.plupload_filelist_header{
+	border-top:none;
+	border-bottom:none;
+}
+
+
+
+/*No header for plupload use as class="dent-plupload-noheader" in plupload element*/
+.dent-plupload-noheader .plupload_header_content{
+	display:none;
+}
+.dent-plupload-noheader .plupload_filelist{
+	height: 40px;
+}
+.dent-plupload-noheader li.plupload_droptext{
+	line-height:25px;
+}
+
+.dent-plupload-noheader p{
+	font-size:11px;
+	color:#B52F2F;
+	padding:10px;
+	margin:5px 0;
+	border:1px solid #B52F2F;
+}
+/*end No header for plupload use as class="dent-plupload-noheader" in plupload element*/
+
+.plupload_file_size, .plupload_file_status, .plupload_progress {
+	width: 70px;
+}

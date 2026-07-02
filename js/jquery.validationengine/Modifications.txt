@@ -1,0 +1,5 @@
+version 2.5 has an error in the romanian language file at the url regular expression - change it with the english regular expr.
+hu lang file is missing - use momentary a copy of romanian language ...
+there are some modifications on the main source .. compare with the original
+
+there are some custom css in the *.dent file 

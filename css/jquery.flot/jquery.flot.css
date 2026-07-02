@@ -1,0 +1,57 @@
+.legend{
+	z-index: 0;
+}
+.legend table tbody tr{
+	padding: 1px;
+	display: block;
+	border-bottom: 1px solid #DDD;
+}
+.legend .legendColorBox{
+	padding: 2px;
+}
+.legend .legendLabel{
+	padding: 0px 0px 0px 10px;
+	vertical-align: middle;
+}
+.flot-base{
+	z-index: 1;
+}
+.flot-overlay{
+	z-index: 1;
+}
+.pieLabel{
+	z-index: 3;
+}
+.pieLabel div{
+	font-weight: bold;
+}
+.pieLabelBackground{
+	z-index: 3;
+}
+.flot-pie-chart .pieLabelBackground{
+	display: none;
+}
+.flot-time-chart-hover{
+	z-index: 2;
+}
+.flot-time-chart-hover div{
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
+	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.flot-time-chart .legend table{
+	z-index: 1;
+}
+.flot-mini-pie-chart{
+	width: 200px;
+	height: 200px;
+}
+.flot-mini-pie-chart .legend table{
+	position: absolute;
+	top: 5px;
+	font-size: xx-small !important;
+	color: #545454;
+	left: 110%;
+	z-index: 2;
+}

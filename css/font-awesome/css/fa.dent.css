@@ -1,0 +1,49 @@
+.fa-1p3x{font-size: 1.3em;}
+.fa-1p5x{font-size: 1.5em;}
+.fa-2p0x{font-size: 2.0em;}
+.fa-w20p{width: 20px;}
+.fa-w30p{width: 30px;}
+
+.fa-dent-light-gray {
+  color: #777;
+}
+.fa-dent-gray {
+  color: #444;
+}
+.fa-dent-blue {
+  color: #3B81CD;
+}
+.fa-dent-orange {
+  color: #f45506;
+}
+.fa-dent-green {
+  color: #559700;
+}
+.fa-dent-digiray {
+  color: #84315D;
+}
+.fa-dent-unidentrx{
+	color: #2B228A;
+}
+.fa-dent-red {
+  color: #B52F2F;
+}
+.fa-dent-yellow {
+  color: #F8F830;
+}
+
+.fa_icon{
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0px 2px;
+	color: #3b81cd;
+	cursor: pointer;
+}
+.fa-sel2-list{
+	margin-right:5px;
+}
+.fa-select2-icon{
+	margin-top: 2px;
+	margin-right:5px;
+}
+/* END Font Awesome ICONS */

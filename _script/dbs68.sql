@@ -1,0 +1,2 @@
+ALTER TABLE `clients`
+	ADD COLUMN `alias` VARCHAR(250) NOT NULL DEFAULT '' AFTER `id`;

@@ -1,0 +1,22 @@
+
+to avoid JS "undefined style" error on fast page change with dimg in page (module2)
+line 
+	comp.trigger('RuntimeInit', runtime);
+was put inside a try{}catch(){} block 
+
+
+
+in the minimized moxie.min.js replace 
+	,a.trigger("RuntimeInit",i)
+with
+	;try{a.trigger("RuntimeInit",i)}catch(err){}
+
+
+the file 
+	plupload.full.min.js 
+
+contains both files
+	moxie.min.js
+	plupload.min.js
+
+

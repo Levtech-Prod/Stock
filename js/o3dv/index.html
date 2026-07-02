@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="o3dv.min.js"></script>
+</head>
+<body>
+	<div class="online_3d_viewer"
+    style="width: 800px; height: 600px;"
+    model="test.stp">
+	</div>
+	<script>
+		window.addEventListener ('load', () => {
+			// tell the engine where to find the libs folder
+			OV.SetExternalLibLocation ('libs');
+			// init all viewers on the page
+			OV.Init3DViewerElements ();
+		});
+	</script>
+</body>
+</html>

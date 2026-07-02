@@ -1,0 +1,16 @@
+.colpick {
+	z-index:10000;
+	font-family: Verdana,Arial,sans-serif;
+}
+
+.colpick_field input, .colpick_hex_field input {
+	font-family: Verdana,Arial,sans-serif;
+}
+
+.colpick_hex .colpick_hex_field div, .colpick_hex .colpick_hex_field input, .colpick_hex .colpick_hex_field input:focus {
+	border: none;
+}
+
+.dent-colpicker {
+	border-right:20px solid green;
+}

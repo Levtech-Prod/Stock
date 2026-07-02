@@ -1,0 +1,422 @@
+/*jtable design*/
+/*main container*/
+div.jtable-main-container{
+	color:#444;
+}
+div.jtable-main-container table.jtable {
+    border: none;
+    border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.jtable-main-container table.jtable tbody > tr.jtable-child-row > td .jtable{
+	border:none;
+    border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/*busy message*/
+div.jtable-busy-message{
+	top:50%;
+	left:50%;
+	width:240px;
+	margin-left:-120px;
+	margin-top: -10px;
+	padding:5px;
+	text-align:center;
+	border-radius:3px;
+	text-shadow:none;
+	box-shadow:none;
+	border:0px;
+	font-size:13px;
+}
+div.jtable-busy-panel-background {
+    background-color: #fff;
+    opacity: 0.5;
+	border-radius:3px;
+}
+
+/*title*/
+div.jtable-main-container div.jtable-title {
+	background:none;
+	background-color: transparent;
+	border:none;
+	padding-left:0px;
+    height: auto;
+    line-height: normal;
+	padding:5px 0px;
+	box-shadow: none;
+	min-height: 20px;
+}
+div.jtable-main-container div.jtable-title div.jtable-title-text{
+	text-shadow:none;
+    color: #343a40;
+    font-size: 17px;
+	font-weight: 600;
+}
+div.jtable-main-container tr.jtable-child-row div.jtable-title-text{
+	font-size:14px;
+	padding-bottom:1px;
+}
+div.jtable-main-container div.jtable-title div.jtable-toolbar{
+	line-height: normal;
+	bottom: 4px;
+	margin-right: 0px;
+}
+div.jtable-main-container div.jtable-title div.jtable-toolbar span.jtable-toolbar-item{
+	background: #666;
+	border-left:3px solid #98CF09;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);  
+	border-radius: 2px 2px 2px 2px;
+	color: #FFF;
+	font-size: 1em;
+	padding: 0 8px 0 0;
+}
+div.jtable-main-container div.jtable-title div.jtable-toolbar span.jtable-toolbar-item.jtable-toolbar-item-hover{
+	background: #343a40;
+	color: #FFF;
+}
+
+/*command button*/
+div.jtable-main-container table.jtable tbody > tr > td .jtable-command-button{
+    border-radius: 3px;
+	min-height:16px;
+	min-width:16px;	
+}
+div.jtable-main-container table.jtable tbody > tr > td .jtable-close-button{
+    background: none;
+    background-color: inherit;
+	box-shadow: none;  
+    opacity: 1;
+	right: 0px;
+	top:4px;
+}
+div.jtable-main-container table.jtable tbody > tr > td .jtable-close-button:hover,
+div.jtable-main-container table.jtable tbody > tr > td .jtable-close-button:focus{
+    background: none;
+    background-color: #f45506;
+}
+div.jtable-main-container div.jtable-title .jtable-close-button + div.jtable-toolbar {
+	margin-right: 25px;
+}
+
+div.jtable-main-container div.jtable-title div.jtable-toolbar span.jtable-toolbar-item-text {
+  margin: 2px 2px 2px 4px;
+}
+
+
+div.jtable-main-container table.jtable .jtable-command-column{
+	padding:2px;
+}
+
+/*bottom stuff*/
+div.jtable-main-container div.jtable-bottom-panel {
+	background:#F1F1F1;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	border:none;
+	border-radius:3px;
+	margin-top: 5px;
+	padding:3px;
+	font-size:11px;
+	min-height:24px;
+	position: relative;
+}
+div.jtable-main-container div.jtable-bottom-panel div.jtable-left-area{
+	padding:0px;
+	margin:0px;
+	display: inline;
+}
+div.jtable-main-container div.jtable-bottom-panel div.jtable-left-area span.jtable-page-list {
+	margin:0px;
+	padding-right:10px;
+}
+div.jtable-main-container div.jtable-bottom-panel div.jtable-left-area span.jtable-goto-page{
+	padding-right:10px; 
+}
+div.jtable-main-container div.jtable-bottom-panel div.jtable-left-area span.jtable-page-size-change{
+	padding-right:10px;
+}
+
+div.jtable-main-container div.jtable-bottom-panel div.jtable-right-area{
+	padding:0px;
+	margin:0px;
+	display: inline;
+}
+div.jtable-main-container div.jtable-bottom-panel div.jtable-right-area span.jtable-page-info {
+	color:#666;
+	text-align: right;
+}
+
+div.jtable-main-container div.jtable-bottom-panel span.jtable-page-size-change select,
+div.jtable-main-container div.jtable-bottom-panel span.jtable-goto-page select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	font-size: inherit;
+	padding: 1px 1px 1px 1px;
+	margin-top: 3px;
+}
+/*bottom navigation buttons*/
+
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-space, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-first, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-last,
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-previous, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-next/*, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active*/{
+	font-weight: normal;
+	text-align:center;
+	border-radius:3px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	color:white;
+	padding: 3px 5px 3px 3px;
+	margin-right:1px;
+	text-shadow: none;
+
+	border: 1px solid #666666;
+	border-left: 3px solid #666666;	
+	background: #666666; 
+	background: -moz-linear-gradient(top,  #666666 0%, #777777 44%, #666666 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(44%,#777777), color-stop(100%,#666666)); 
+	background: -webkit-linear-gradient(top,  #666666 0%,#777777 44%,#666666 100%); 
+	background: -o-linear-gradient(top,  #666666 0%,#777777 44%,#666666 100%); 
+	background: -ms-linear-gradient(top,  #666666 0%,#777777 44%,#666666 100%); 
+	background: linear-gradient(to bottom,  #666666 0%,#777777 44%,#666666 100%); 
+}
+
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number:hover, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-space:hover, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-first:hover, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-last:hover,
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-previous:hover, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-next:hover, 
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active:hover/*,
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active*/{
+	border: 1px solid #343a40;
+	border-left: 3px solid #343a40;	
+	background: #343a40; 
+	background: -moz-linear-gradient(top,  #343a40 0%, #22262a 44%, #343a40 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#343a40), color-stop(44%,#22262a), color-stop(100%,#343a40));
+	background: -webkit-linear-gradient(top,  #343a40 0%,#22262a 44%,#343a40 100%);
+	background: -o-linear-gradient(top,  #343a40 0%,#22262a 44%,#343a40 100%);
+	background: -ms-linear-gradient(top,  #343a40 0%,#22262a 44%,#343a40 100%);
+	background: linear-gradient(to bottom,  #343a40 0%,#22262a 44%,#343a40 100%);
+}
+
+
+
+
+
+div.jtable-main-container table.jtable thead {
+    background:  #DDDDDD;
+    border-bottom: none;
+    border-top: none;
+}
+div.jtable-main-container table.jtable thead th {
+/*	padding: 5px;*/
+}
+div.jtable-main-container table.jtable thead th.jtable-column-header div.jtable-column-header-container {
+/*    height: 18px;*/
+    position: relative;
+}
+div.jtable-main-container table.jtable thead th.jtable-column-header span.jtable-column-header-text {
+    overflow: hidden;
+   	position: absolute;
+    left: 0;
+	right: 0;
+/*    margin: 0px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	padding-right:13px;
+}
+
+
+
+
+
+div.jtable-main-container table.jtable tbody > tr {
+	height:auto;
+	min-height:28px;
+}
+div.jtable-main-container table.jtable tbody > tr > td {
+    border-left: 1px solid #E1E1E1;
+    padding: 5px;
+	vertical-align: middle;
+}
+
+div.jtable-main-container table.jtable tbody > tr.jtable-row-even{
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+div.jtable-main-container table.jtable tbody > tr:hover/*,
+div.jtable-main-container table.jtable tbody > tr.jtable-row-even:hover*/{
+	background:#f1f1f1;
+	color:#343a40;
+}
+
+div.jtable-main-container table.jtable tbody > tr.jtable-child-opened{
+	color:#B52F2F;
+	background:#f1f1f1;
+}
+
+div.jtable-main-container table.jtable tbody > tr > td.col-opened{
+	background:#FFF;
+    border-top: 1px solid #E1E1E1;
+}
+div.jtable-main-container table.jtable tbody > tr.jtable-child-row > td {
+	background:#FFF;
+}
+div.jtable-main-container table.jtable tbody > tr.jtable-child-row div.jtable-main-container {
+    padding: 10px 20px 20px 20px;
+}
+
+div.jtable-main-container table.jtable tbody > tr.row-blurred{
+	color:#808080;
+	background:#F8F8F8;
+	opacity: 0.8;
+}
+
+div.jtable-main-container table.jtable tbody > tr.row-blurred:hover{
+	background:#f1f1f1;
+	color:#343a40;
+	opacity: 1;
+}
+
+/* DO NOT CHANGE AFTER THIS LINE USED FOR JTABLE DIALOG POSITIONING */
+form.jtable-dialog-form {
+    font-family: inherit;
+    font-size: inherit;
+}
+form.jtable-dialog-form div.jtable-input-field-container {/*must be before .jtabledlg-col-X*/ 
+	width:100%;
+	display:inline-block;
+	vertical-align:top;/*this is important for inline element positioning*/	
+	box-sizing:border-box;
+	border-bottom:none;
+}
+form.jtable-dialog-form div.jtable-input-label{
+	font-weight: normal;
+	padding: 2px 2px 0px 2px;
+	color: #394046;
+	font-size: inherit;
+}
+form.jtable-dialog-form div.jtable-checkbox-input{
+	padding: 4px 2px;
+}
+
+/*ui spinner*/
+form.jtable-dialog-form span.ui-spinner{
+	display: block;
+}
+form.jtable-dialog-form span.ui-spinner.ui-widget-content{
+	border: none;
+}
+
+/* default content width */ 
+form.jtable-dialog-form div.jtable-input .select2{width:100%;}
+form.jtable-dialog-form div.jtable-input input{
+	width:100%; 
+	margin:0px;/*important for chrome positioning !!!!!!!!!!*/
+}
+form.jtable-dialog-form div.jtable-input input[type="checkbox"]{
+	width: 20px;
+	margin:0px;/*important for chrome positioning !!!!!!!!!!*/
+}
+form.jtable-dialog-form div.jtable-textarea-input textarea{	/* width: 97%; width: calc(100% - 10px); */width: 100%; resize: none;  min-height: 75px; }
+form.jtable-dialog-form div.jtable-textarea-input textarea.jtable-textarea-larger{ height: 135px; }
+form.jtable-dialog-form div.jtable-textarea-input textarea.height-150{ height: 150px; }
+form.jtable-dialog-form div.jtable-textarea-input textarea.height-28{ height: 24px; resize: none; min-height: 28px}
+form.jtable-dialog-form div.jtable-textarea-input textarea.resize-y-300{ resize: vertical; max-height: 300px; }
+form.jtable-dialog-form div.jtable-textarea-input textarea.height-y-45{ resize: vertical; min-height: 45px; }
+/* custom colum width's used via jTable containerClass AND */ 
+/* custom input width's used via jTable inputClass */ 
+form.jtable-dialog-form div.jtabledlg-w100proc{width:100%;}
+form.jtable-dialog-form div.jtabledlg-w90proc{width:90%;}
+form.jtable-dialog-form div.jtabledlg-w80proc{width:80%;}
+form.jtable-dialog-form div.jtabledlg-w75proc{width:75%;}
+form.jtable-dialog-form div.jtabledlg-w66proc{width:66.66%;}
+form.jtable-dialog-form div.jtabledlg-w60proc{width:60%;}
+form.jtable-dialog-form div.jtabledlg-w50proc{width:50%;}
+form.jtable-dialog-form div.jtabledlg-w45proc{width:45%;}
+form.jtable-dialog-form div.jtabledlg-w40proc{width:40%;}
+form.jtable-dialog-form div.jtabledlg-w33proc{width:33.33%;}
+form.jtable-dialog-form div.jtabledlg-w25proc{width:25%;}
+form.jtable-dialog-form div.jtabledlg-w20proc{width:20%;}
+form.jtable-dialog-form div.jtabledlg-w16proc{width:16.66%;}
+form.jtable-dialog-form div.jtabledlg-w15proc{width:15%;}
+form.jtable-dialog-form div.jtabledlg-w10proc{width:10%;}
+
+form.jtable-dialog-form div.jtabledlg-biglabel .jtable-input-label{
+    font-size: 16px;
+    /*font-weight: bold;*/
+    padding: 3px;
+}
+form.jtable-dialog-form div.jtabledlg-center-header .jtable-input-label{
+    background: #ddd;
+    text-align: center;
+    border-radius: 2px;	
+    color:#f45506;
+}
+/*custom operation based coloring*/
+/*.jtable-op-insert input, .jtable-op-insert textarea, .jtable-op-insert select {	background:#ebfde8;}
+.jtable-op-edit input,.jtable-op-edit textarea,.jtable-op-edit select,{	background:#fcfde1;}*/
+
+form.jtable-dialog-form div.hidden{ /*extra hidden for the jtable*/
+	display: none ; 
+}
+form.jtable-dialog-form .jtabledlg-checkbox-holder .jtable-option-text-clickable{
+	color:#343a40;
+}
+form.jtable-dialog-form .tree_container{
+	height:360px; 
+}
+div.jtable-main-container div.jtable-bottom-panel .jtable-page-list .jtable-page-number-disabled.jtable-page-number-active{
+	border: 1px solid #343a40;
+	border-left: 3px solid #343a40;
+	background: #343a40;
+	background: -moz-linear-gradient(top, #343a40 0%, #22262a 44%, #343a40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#343a40), color-stop(44%,#22262a), color-stop(100%,#343a40));
+	background: -webkit-linear-gradient(top, #343a40 0%,#22262a 44%,#343a40 100%);
+	background: -o-linear-gradient(top, #343a40 0%,#22262a 44%,#343a40 100%);
+	background: -ms-linear-gradient(top, #343a40 0%,#22262a 44%,#343a40 100%);
+	background: linear-gradient(to bottom, #343a40 0%,#22262a 44%,#343a40 100%);
+}
+
+form.jtable-dialog-form div.jtable-radio-input{
+	float: left;
+	padding: 5px 40px 5px 5px;
+}
+form.jtable-dialog-form div.jtable-radio-input input, form.jtable-dialog-form div.jtable-checkbox-input input, form.jtable-dialog-form span.jtable-option-text-clickable{
+	width: auto;
+}
+form.jtable-dialog-form .jtabledlg-intervention-title.active{
+	color: #FFF;
+	background-color: #343a40;
+}
+
+div.jtable-main-container table.jtable tbody > tr > td .jtable_display_text_row{
+	max-height: 52px;
+	overflow-y: auto;
+}
+
+div.jtable-main-container div.jtable-bottom-panel span.jtable-page-tools {
+    padding: 0px;
+    margin: 2px 3px;
+    position: absolute;
+    right: 0px;
+}
+div.jtable-main-container div.jtable-bottom-panel span.jtable-page-tools button{
+    margin-left: 2px;
+	height: 20px;
+    width: 20px;
+    font-size: 10px;    
+}
+
+/*jtable sort icons padding */
+div.jtable-main-container table.jtable thead th.jtable-column-header span.jtable-column-header-text{
+	padding-right: 17px;
+}

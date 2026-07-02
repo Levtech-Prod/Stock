@@ -1,0 +1,440 @@
+
+/* some generic stuff - should be moved to main ???????*/
+#customer-select-tabs{
+	background: transparent;
+}
+#module-tabs{
+	background: transparent;
+}
+#module-tabs .ui-tabs-panel {min-height:/*600px*/80vh;}/*Viewport-Percentage length*/
+#module-tabs .dent-auto-height .ui-tabs-panel {min-height: 1px;}
+#customer-select-dialog #dialog-tab .ui-tabs-panel {
+	min-height:140px;
+	box-sizing: content-box;
+}
+
+
+/*this is the new look of jquery ui timepicker*/
+.ui-timepicker-div{	padding: 5px; }
+
+/*this is the new look of jquery ui*/
+/*******************/
+
+/*.dent-ui-tabs.ui-tabs  - the generic tabs*/
+/*******************/
+.ui-tabs .ui-widget-content{ border:none; }
+.dent-ui-tabs .ui-widget-header {background:transparent; border: 0px;}
+/*I reset the tabs holder div padding etc. We may out that back when designing more content. Also make the tab layoutchanges here*/
+.dent-ui-tabs.ui-tabs {padding: 0px; background:transparent;}
+.dent-ui-tabs.ui-tabs.ui-widget-content.ui-corner-all{border:0px;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav{padding:0px; margin-bottom:2px;}
+/*Draw the border around the content area that toutch the tabs*/
+.dent-ui-tabs .ui-tabs-panel {border-top:2px solid #3B81CD; /*box-shadow:0 0 3px rgba(0, 0, 0, 0.5);*/}
+.dent-ui-tabs .ui-tabs-nav .ui-state-default{border:0px solid #ffffff;}
+.dent-ui-tabs .ui-widget-header .ui-state-default{background:transparent;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default{border:0px solid transparent; background:transparent; box-shadow:0 0 3px rgba(0, 0, 0, 0.5); background-color: white;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default a{font-weight:normal; color:#444; border-left: 3px solid transparent;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default a:hover{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked a{font-weight:normal; color:#444; border-left: 3px solid transparent;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked a:hover{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active a{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active a:hover{color:#ffffff;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active.locked a{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active.locked a:hover{color:#ffffff;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav li{padding:0px; margin: 1px 3px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav li a {padding: 5px 10px;}
+.dent-ui-tabs.ui-tabs .ui-tabs-panel {padding:10px 0px; background-repeat: repeat-x;background-color:none; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default:hover{background: #666; border:0px solid #666; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked {background: #DDD; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked:hover{background: #999; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active{background: #3B81CD; /*background: #B52F2F; */border:0px solid #3B81CD; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active:hover{ background: #3B81CD; /*background: #B52F2F;*/ border: 0px solid #3B81CD; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active.locked{background: #3B81CD; /*background: #B52F2F; */border:0px solid #3B81CD; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-active.locked:hover{ background: #3B81CD; /*background: #B52F2F;*/ border: 0px solid #3B81CD; }
+
+.dent-ui-tabs.ui-tabs .ui-tabs-nav li div.viewer { padding: 5px 10px; }
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default div.viewer{font-weight:normal; color:#444; border-left: 3px solid transparent;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default div.viewer:hover{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked div.viewer{font-weight:normal; color:#444; border-left: 3px solid transparent;}
+.dent-ui-tabs.ui-tabs .ui-tabs-nav .ui-state-default.locked div.viewer:hover{color:#ffffff; border-left: 3px solid #98CF09; border-radius:2px 2px 0 0;}
+
+.dent-ui-tabs.dent-noborder .ui-tabs-panel,
+.ui-dialog .dent-ui-tabs.dent-noborder .ui-tabs-panel{box-shadow: none; background: none; padding: 10px 0px}
+
+.dent-ui-tabs.dent-smallborder .ui-tabs-panel,
+.ui-dialog .dent-ui-tabs.dent-smallborder .ui-tabs-panel{padding: 10px;}
+
+.dent-ui-tabs.dent-zeroborder .ui-tabs-panel,
+.ui-dialog .dent-ui-tabs.dent-zeroborder .ui-tabs-panel{box-shadow: none; background: none; padding: 0px 0px; margin:-1px;}
+
+#module-tabs .ui-tabs-panel.locked{
+	background-size: 10px 10px !important;
+	background-image: linear-gradient(45deg, transparent 46%, #afafafcc 49%, #afafafcc 51%, transparent 55%);
+}
+/* .ui-dialog .dent-ui-tabs.dent-zeroborder .jtable-input{padding:0px;} */
+.ui-dialog .dent-ui-tabs .ui-tabs-panel{padding: 20px 0px;}
+
+.dent-ui-tabs.ui-tabs .dent-ui-tabs-button{
+	border-radius:2px 2px 0 0;
+    background: none repeat scroll 0 0 white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);	
+	float: right;
+	margin: 1px 0 0 3px;
+    padding: 0;
+	list-style: none outside none;
+	cursor: pointer;
+	font-weight: normal;
+	color:#444;
+	position: relative;
+    top: 0;
+	overflow: hidden;
+}
+
+.dent-ui-tabs.ui-tabs .dent-ui-tabs-button a{
+	border-left:3px solid transparent;
+	padding:5px 10px;
+	text-decoration: none;
+	color: #444;
+	overflow: hidden;
+	float: left;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dent-ui-tabs.ui-tabs .dent-ui-tabs-button a:hover{
+	border-left:3px solid #98CF09;
+}
+/* end .dent-ui-tabs.ui-tabs*/
+
+
+/*.dent-ui-tabs-list.ui-tabs - patient select tabs*/
+/*******************/
+.dent-ui-tabs-list .ui-widget-header {background:transparent; border: 0px;}
+/*I reset the tabs holder div padding etc. We may out that back when designing more content. Also make the tab layoutchanges here*/
+.dent-ui-tabs-list.ui-tabs {padding: 0px;}
+.dent-ui-tabs-list.ui-tabs.ui-widget-content.ui-corner-all{border:0px;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav{padding:0px; margin-bottom:0px;}
+/*Draw the border around the content area that toutch the tabs*/
+.dent-ui-tabs-list .ui-tabs-panel { display: none; visibility: hidden; height:0px; padding:0px !important; margin:0px !important; }
+.dent-ui-tabs-list .ui-tabs-nav .ui-state-default{border:0px solid #fff;}
+.dent-ui-tabs-list .ui-widget-header .ui-state-default{background:transparent;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-default{/*border:1px solid #fff;*/background-color: #FFF; box-shadow:0 0 3px rgba(0, 0, 0, 0.5); margin-right: 2px;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-default a{font-weight:normal;max-width:160px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-hover a{color:#fff;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active a{color:#fff;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active a:hover{color:#ffffff;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav li{padding:1px;margin:2px 0px 2px 1px;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav li a {padding: 3px 25px 3px 36px;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-default:hover{background: #666;/* border:1px solid #666;*/ color:#fff;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active{ background: #3B81CD; /*background: #B52F2F; /*border:1px solid #B52F2F;*/ box-shadow:0 0 3px rgba(0, 0, 0, 0.5); }
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active:hover{ background: #3B81CD; /*border: 1px solid #B52F2F;*/ }
+.dent-ui-tabs-list .ui-widget-header .ui-icon {background-image: url("../../images/ui-icons_white.png");}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-icon-close {background-position: -32px -192px;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .closetab{
+	border-radius:20px;
+	position: absolute;
+	right:0px;
+	top: 50%;
+	cursor: pointer; 
+	margin: 5px;
+	text-align: center;
+	font-weight:bolder;
+	background-color:#666;
+	bottom:0px;
+	height: 16px;
+	width: 16px;
+	margin-top: -8px;
+}	
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .closetab:hover{background-color:#E55353; }
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active .closetab {background-color:#3B81CD;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active .closetab:hover{background-color:#E55353;}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .closeall{
+	border-radius:20px;
+	position: absolute;
+	right:0px;
+	top: 50%;
+	cursor: pointer; 
+	margin: 5px;
+	text-align: center;
+	font-weight:bolder;
+	background-color:#666;
+	bottom:0px;
+	height: 16px;
+	width: 16px;
+	margin-top: -8px;
+}	
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .closeall:hover{background-color: #E55353; }
+
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-default img{
+	position: absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	width:25px;	
+	height:100%;
+	border-left:2px solid #666;
+}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-hover img,
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav .ui-state-active img
+{
+	border-left:2px solid #98CF09;
+}
+.dent-ui-tabs-list.ui-tabs .dent-ui-tabs-list-button{
+	/*padding:4px 10px;*/
+	float: left;
+    list-style: none outside none;
+    /*margin: 1px;*/
+    white-space: nowrap;
+	/*border: 1px solid #3B81CD;*/
+	background: #666;
+	font-weight: normal;
+	cursor: pointer;
+	color:#ffffff;
+	box-shadow:0 0 3px rgba(0, 0, 0, 0.5);
+	margin:2px 2px 2px 0px;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+	border-left: 3px solid #98CF09;
+}
+.dent-ui-tabs-list.ui-tabs .dent-ui-tabs-list-button:hover{
+	border-left: 3px solid #98CF09;
+	background: #559700; /* Old browsers */
+	background: -moz-linear-gradient(top,  #559700 0%, #5fa800 44%, #559700 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559700), color-stop(44%,#5fa800), color-stop(100%,#559700)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #559700 0%,#5fa800 44%,#559700 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #559700 0%,#5fa800 44%,#559700 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #559700 0%,#5fa800 44%,#559700 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #559700 0%,#5fa800 44%,#559700 100%); /* W3C */
+}
+.dent-ui-tabs-list.ui-tabs .dent-ui-tabs-list-button a{
+	text-decoration: none;
+	color: #fff;
+	padding:4px 10px;
+	float: left;
+}
+.dent-ui-tabs-list .ui-corner-top{
+	border-radius:0px;
+}
+.dent-ui-tabs-list.ui-tabs .ui-tabs-nav li:last-child {
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+}
+/*end .dent-ui-tabs-list.ui-tabs - patient select tabs*/
+
+
+/* .ui-dialog */
+/*******************/
+.ui-dialog{
+	padding:1px;
+	border-radius:4px;
+}
+
+.ui-dialog label{
+	margin-bottom: inherit;
+    display: inline;
+}
+
+.ui-dialog p{
+	margin-bottom: inherit;
+}
+
+.ui-dialog .ui-dialog-titlebar { 
+ 	border: 0px;
+	border-bottom: 1px solid #A5C5E9;
+	background: #FFFFFF none; 
+	color: #3B81CD; 
+	font-weight: normal; 
+	font-size:1.3em;
+	margin:0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding: 7px 10px;
+	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.ui-dialog .ui-dialog-titlebar a { 
+	color: #444; 
+}
+.ui-dialog .ui-dialog-titlebar-close{
+	background: none;
+	border:none;
+	padding:0px;
+	margin-top:-8px;
+	background-color: #3B81CD;
+    background-image: url(../../images/ui-icons_white.png);
+    background-position: -32px -192px;
+    border-radius: 16px 16px 16px 16px;
+    width: 16px;
+	height: 16px;
+	outline: none;
+}
+.ui-dialog .ui-dialog-titlebar-close .ui-icon-closethick {
+	background-color: #3B81CD;
+    background-image: url("../../images/ui-icons_white.png");
+	background-position: -32px -192px;
+    border-radius: 16px 16px 16px 16px;	
+	border:none;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover .ui-icon-closethick {
+	background-color: #e05b18;/*#B52F2F;*/
+	border:none;
+}
+.ui-dialog .ui-widget-content .ui-icon-help{
+	background-image: url("../../images/ui-icons_white.png");
+	background-position: -48px -144px;
+	background-color: #3B81CD;
+	border-radius: 8px;
+	padding: 0px;
+}
+.ui-dialog .ui-widget-content .ui-icon-alert {
+	background-image: url("../../images/ui-icons_white.png");
+	border-radius: 12px !important;
+	width: 18px;
+	height: 18px;
+	background-position: 1px -144px;
+	background-color: #3B81CD;
+	padding: 0px;
+}
+.ui-dialog .ui-dialog-content{
+	background-color: white;
+	padding: 15px 10px 10px 10px;
+}
+.ui-dialog-buttonpane.ui-widget-content{
+	border:none;
+	border-top: 1px solid #A5C5E9;
+	margin: 0;
+	padding: 5px 3px 2px 0
+}
+/*end .ui-dialog*/
+
+
+/* ui-state-highlight */
+/*******************/
+.ui-state-highlight, .ui-state-error{
+	background: white;
+/*	background: -moz-linear-gradient(top, white 0%, #F0F0F0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(100%,#F0F0F0));
+	background: -webkit-linear-gradient(top, white 0%,#F0F0F0 100%);
+	background: -o-linear-gradient(top, white 0%,#F0F0F0 100%);
+	background: linear-gradient(to bottom, white 0%,#F0F0F0 100%);*/
+	width: auto;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	border-radius: 2px;
+	text-align: left;
+}
+.ui-state-error span{
+	background-color: #B52F2F;
+	border-radius: 10px;
+	/*margin-right: 10px;*/
+}
+.ui-state-highlight span{
+	background-color: #3B81CD;
+	border-radius: 10px;
+}
+.ui-state-error{
+	color: #B52F2F;
+	border: 1px solid #E18A8A;
+}
+.ui-state-highlight{
+	color: #005CC0;
+	border: 1px solid #A5C5E9;
+}
+/* end ui-state-highlight */
+
+
+/* .ui-datepicker */
+/*******************/
+.ui-datepicker{width:18em;}
+.ui-datepicker,.ui-datepicker-title {padding:0px; color:#858585;}
+.ui-datepicker.ui-widget-content {border: 1px solid #d6d6d6;}
+.ui-datepicker .ui-icon-circle-triangle-w { background-position: -96px 0; }
+.ui-datepicker .ui-icon-circle-triangle-e {  background-position: -32px 0;}
+.ui-datepicker-header{border-bottom:1px solid #d6d6d6; background: #f1f1f1; }
+.ui-datepicker-header.ui-corner-all {border-top:0px;border-left:0px;border-right:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {opacity: 0.4;}
+.ui-datepicker .ui-datepicker-prev-hover span, .ui-datepicker .ui-datepicker-next-hover span{opacity: 1;}
+.ui-datepicker .ui-datepicker-prev-hover { left:2px;}
+.ui-datepicker .ui-datepicker-next-hover { right:2px;}
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 2px; }
+.ui-datepicker-calendar {font-size:11px;}
+.ui-datepicker-calendar .ui-state-default {background: transparent; border:0px; color:#666;}
+.ui-datepicker th {background:#f3f2f2; margin:0px 2px; padding: 4px 2px;}
+.ui-datepicker table {margin:0px;font-size:10px;background: #ffffff;}
+.ui-datepicker td {margin:2px; }
+.ui-datepicker td a {text-align: center;  }
+.ui-datepicker td span {text-align: center;  }
+.ui-datepicker table  td a.ui-state-default {font-weight:normal; }
+.ui-datepicker table  td a.ui-state-hover {color:#FFF;background-color: #3B81CD; border-radius: 2px;}
+.ui-datepicker table  td a.ui-state-active {background: none; font-weight:bold;color:#FFF;text-decoration:none; background-color: #f45506; border-radius: 2px;}
+.ui-datepicker .ui-datepicker-title select{color:#666; padding: 0px 4px;}
+.ui-datepicker .ui-datepicker-today a{ color: #f45506; }
+.ui-datepicker .ui-datepicker-week-end a{ color: #3B81CD; }
+.ui-datepicker .ui-state-active {}
+.ui-datepicker .ui-datepicker-unselectable .ui-state-default, .ui-datepicker .ui-state-disabled .ui-state-default{
+	font-weight: normal;
+}
+/* end .ui-datepicker */
+
+/*.ui-spinner*/
+.ui-spinner .ui-spinner-input{
+	margin:0px;
+	padding-right:25px;
+}
+
+.ui-spinner a.ui-spinner-up{
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+	border-bottom:1px solid #d6d6d6;
+}
+.ui-spinner a.ui-spinner-down{
+	border-top:1px solid #d6d6d6;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+}
+.ui-spinner-button.ui-button{
+	padding:0px;
+	margin:0px;
+}
+/*.ui-spinner*/
+
+/*jquery .ui-button (the rest of the button css is in the global.css button section)*/
+.ui-button-text-only .ui-button-text{
+	padding:0px;
+}
+/*end .ui-button*/
+
+/*some ui-icons*/
+.ui-icon{
+	cursor: pointer;
+}
+/*some ui-icons*/
+
+/* ui selectabled */
+.dent-selection-buttons .ui-state-default,.dent-selection-buttons .ui-widget-content .ui-state-default,.dent-selection-buttons .ui-widget-header .ui-state-default {
+	border: 1px solid #397cc5;
+	border-radius: 2px;
+	background: #A5C5E9;
+	font-weight: normal;
+	color: #FFF;
+	cursor: pointer;
+	padding: 20px 10px;
+	text-align: center;
+}
+.dent-selection-buttons .ui-selected{
+	background: #3B81CD;
+	border: 1px solid #397cc5;
+	font-weight: normal;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	cursor: pointer;
+}
+.ui-widget-content a{
+	color: #3B81CD;
+}
+
+.ui-widget-content .row{
+	display: block;
+	flex-wrap: unset;
+	margin: 0;
+}

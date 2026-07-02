@@ -1,0 +1,2 @@
+ALTER TABLE `jobs`
+	ADD COLUMN `five_axis` INT(11) NULL DEFAULT NULL AFTER `comments`;
