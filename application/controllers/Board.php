@@ -26,13 +26,14 @@ class Board extends MY_Controller {
         $statuses = $this->jobs_model->query($sqls, $sparams)->result_array();
 
         $jparams = array();
-        $sqlj = "SELECT j.id, concat(j.id, ' - ', j.name) as title, j.status as `block`, concat('<div class=\"pull-left\">', o.id,'</div><div class=\"pull-right\"><i class=\"fas fa-check-square\"></i> ', j.id ,'</div>') as footer, if(j.image is not null, concat('".profile_to_url(UPLOAD_IMG_DIR)."', j.image), '') as image_url, j.five_axis, j.status, j.quantity, j.work_log_id, j.blind_job,
+        $sqlj = "SELECT j.id, concat(j.id, ' - ', j.name) as title, j.status as `block`, concat('<div class=\"pull-left\">', o.id, if(c.alias!='',CONCAT(' - ', c.alias),''), '</div><div class=\"pull-right\"><i class=\"fas fa-check-square\"></i> ', j.id ,'</div>') as footer, if(j.image is not null, concat('".profile_to_url(UPLOAD_IMG_DIR)."', j.image), '') as image_url, j.five_axis, j.status, j.quantity, j.work_log_id, j.blind_job,
                 ((((j.price-material_price)*quantity)/st.wage*60)+j.estimate_time) AS est_time,
                 (SELECT MAX(ts) FROM jobs_log l LEFT JOIN jobs_status s ON s.id=l.status_new where job_id=j.id AND s.`type`=2) AS end_date, j.in_work, 
-                j.material_received
+                j.material_received, c.alias
                 from jobs j
                 left join orders o on (o.id = j.order_id) 
                 left join settings st on (st.id=1)
+                left join clients c on (c.id = o.client_name)
             where archived=0 and o.deleted=0 ";
         //+calc_qc_time(j.id)
         if ($req['filter_search']){

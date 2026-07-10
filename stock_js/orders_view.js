@@ -143,6 +143,10 @@ var orders_view = function(params){
                                 ret = langJS('global_closed');
                                 bg_color = '#9e989e';
                                 break;
+                            case '5':
+                                ret = langJS('global_canceled');
+                                bg_color = '#4d4d4d';
+                                break;
                         }
                         return '<div style="background-color:'+bg_color+'; padding: 2px; color: white;">'+ret+' ('+parseFloat(data.record.procent).toFixed(0)+'%)</div>';
                     }
@@ -314,7 +318,7 @@ var orders_view = function(params){
                     sorting: true,
                     inputClass: 'select2 sel2-100 select2-done',
                     containerClass : 'jtabledlg-w100proc',
-                    options: [{'DisplayText':'','Value':''}, {'DisplayText':langJS('global_can_invoice'),'Value':3},{'DisplayText':langJS('global_closed'),'Value':4},],
+                    options: [{'DisplayText':'','Value':''}, {'DisplayText':langJS('global_can_invoice'),'Value':3},{'DisplayText':langJS('global_closed'),'Value':4},{'DisplayText':langJS('global_canceled'),'Value':5}],
                 },
                 est_time: {
                     title: langJS('global_est_time'),
@@ -1254,7 +1258,7 @@ var orders_view = function(params){
                     allowClear: true,
                     multiple: true,
                     cacheKEY:'sel2.order_status',
-                    data: [{id:0,text:langJS('global_init')},{id:1,text:langJS('global_progress')}, {id:2,text:langJS('global_ready')}, {id:3,text:langJS('global_can_invoice')}, {id:4,text:langJS('global_closed')}],
+                    data: [{id:0,text:langJS('global_init')},{id:1,text:langJS('global_progress')}, {id:2,text:langJS('global_ready')}, {id:3,text:langJS('global_can_invoice')}, {id:4,text:langJS('global_closed')}, {id:5,text:langJS('global_canceled')}],
                 })
             },
             {

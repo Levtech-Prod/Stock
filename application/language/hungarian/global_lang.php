@@ -264,4 +264,5 @@ $lang['global_not_broken'] = 'Nem törött el a szerszám';
 $lang['global_right_angle'] = 'Vinkli';
 $lang['global_arm1'] = 'Szár1';
 $lang['global_arm2'] = 'Szár2';
+$lang['global_canceled'] = 'Visszamondva';
 /* end of language file */

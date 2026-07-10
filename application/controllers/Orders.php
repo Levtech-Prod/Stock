@@ -29,7 +29,7 @@ class Orders extends MY_Controller {
                             (select sum(j.working_minutes) FROM jobs j WHERE j.order_id = o.id) as working_minutes,
                             (SELECT count(id) FROM jobs j WHERE j.order_id = o.id) as job_number,
                             IF(EXISTS(SELECT handling from jobs j WHERE j.order_id = o.id and handling is not null), 1, 0) as handling,
-                            IF(EXISTS(SELECT if((j.cylinder=0 AND (j.width=0 OR j.height=0 OR j.`length`=0)) OR (j.cylinder=1 AND (j.diameter=0 or j.`length`=0)), 1, 0) AS zero_position from jobs j WHERE j.order_id = o.id having zero_position=1), 1, 0) as zero_position,
+                            IF(EXISTS(SELECT if((j.cylinder=0 AND j.right_angle=0 AND (j.width=0 OR j.height=0 OR j.`length`=0)) OR (j.cylinder=1 AND (j.diameter=0 or j.`length`=0)) OR (j.right_angle=1 AND (j.arm1=0 or j.arm2=0 or j.height=0 OR j.`length`=0)), 1, 0) AS zero_position from jobs j WHERE j.order_id = o.id having zero_position=1), 1, 0) as zero_position,
                             IF(EXISTS(SELECT j.quantity from jobs j WHERE j.order_id = o.id and j.quantity>=5), 1, 0) as series,
                             IF(EXISTS(SELECT l.status from jobs_log l left join jobs j on (j.id=l.job_id) WHERE j.order_id = o.id and (l.status=15 or l.status_new=15)), 1, 0) as wrong,
                             st.wage,

@@ -6,6 +6,11 @@ function nullFunction(){} //same as $.noop
 // GENERIC functions
 //**********************************************************************************
 function content_load(page, params = {}){
+    if(page=="Board"){
+        $("#main").css("display", "inline-block");
+    }else{
+        $("#main").css("display", "block");
+    }
     crud_jsupdate('Check_login',{},function(rd){
         if(rd.loggedin==1){
             $('#workarea-wait').show();
