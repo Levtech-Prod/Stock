@@ -262,7 +262,7 @@ var orders_view = function(params){
                     }
                 },
                 total_price: {
-                    title: langJS('global_total_order_price'),
+                    title: langJS('global_total_order_price')+APP.settings.currency,
                     create: false,
                     edit: false,
                     list: ((params.price_right==1 && params.manager==0)?true:false),
@@ -271,11 +271,11 @@ var orders_view = function(params){
                     listClass: 'text-right',
                     inputClass: 'validate[required, min[0]]',
                     display: function(data){
-                        return currency_format((parseFloat(data.record.total_price)-(parseFloat(data.record.total_material_price))).toFixed(2));
+                        return (parseFloat(data.record.total_price)-parseFloat(data.record.total_material_price)).toFixed(2);
                     }
                 },
                 tot_price: {
-                    title: langJS('global_tot_price'),
+                    title: langJS('global_tot_price')+APP.settings.currency,
                     create: false,
                     edit: false,
                     list: ((params.price_right==1 && params.manager==0)?true:false),
@@ -283,7 +283,7 @@ var orders_view = function(params){
                     width: '6%',
                     listClass: 'text-right',
                     display: function(data){
-                        return currency_format(parseFloat(data.record.total_price).toFixed(2));
+                        return parseFloat(data.record.total_price).toFixed(2);
                     }
                 },
                 invoice_file: {
